@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeySharp", "MonkeySharp\MonkeySharp.csproj", "{88F5D8C6-534C-4E49-A83A-0D3468F1854D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeySharpTests", "MonkeySharpTests\MonkeySharpTests.csproj", "{3BB9287E-D694-4A28-B05F-E6900E1784E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88F5D8C6-534C-4E49-A83A-0D3468F1854D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F5D8C6-534C-4E49-A83A-0D3468F1854D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F5D8C6-534C-4E49-A83A-0D3468F1854D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F5D8C6-534C-4E49-A83A-0D3468F1854D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BB9287E-D694-4A28-B05F-E6900E1784E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BB9287E-D694-4A28-B05F-E6900E1784E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BB9287E-D694-4A28-B05F-E6900E1784E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BB9287E-D694-4A28-B05F-E6900E1784E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CA18F63F-84A1-44EA-946B-05C000210B0B}
+	EndGlobalSection
+EndGlobal
