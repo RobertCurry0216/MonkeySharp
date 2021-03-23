@@ -8,5 +8,11 @@ namespace MonkeySharp.Tokens
     {
         public TokenType Type { get; set; }
         public string Literal { get; set; }
+
+        public Token(TokenType tokenType, string literal)
+        {
+            Type = tokenType;
+            Literal = literal;
+        }
     }
 }
