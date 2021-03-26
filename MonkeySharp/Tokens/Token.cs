@@ -14,5 +14,10 @@ namespace MonkeySharp.Tokens
             Type = tokenType;
             Literal = literal;
         }
+
+        public override string ToString()
+        {
+            return $"{Type} : {Literal}";
+        }
     }
 }
