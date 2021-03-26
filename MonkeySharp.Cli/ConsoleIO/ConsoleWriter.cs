@@ -1,7 +1,7 @@
 ﻿using MonkeySharp.Repl;
 using System;
 
-namespace MonkeySharp.Cli.ConsoleCli
+namespace MonkeySharp.Cli.ConsoleIO
 {
     internal class ConsoleWriter : IWriter
     {

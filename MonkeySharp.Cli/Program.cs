@@ -1,5 +1,4 @@
-﻿using MonkeySharp.Cli.ConsoleCli;
-using System;
+﻿using MonkeySharp.Cli.ConsoleIO;
 
 namespace MonkeySharp.Cli
 {

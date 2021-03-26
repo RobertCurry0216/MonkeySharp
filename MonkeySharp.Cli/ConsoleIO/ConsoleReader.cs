@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace MonkeySharp.Cli.ConsoleCli
+namespace MonkeySharp.Cli.ConsoleIO
 {
     internal class ConsoleReader : IReader
     {
