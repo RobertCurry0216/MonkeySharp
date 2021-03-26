@@ -10,28 +10,43 @@ namespace MonkeySharp.Tokens
         Eof,
 
         //identifiers and literals
-        Ident,
 
+        Ident,
         Int,
 
         // operators
-        Assign,
 
+        Bang,
+        Assign,
         Plus,
+        Minus,
+        Slash,
+        Asterisk,
+        Equal,
+        NotEqual,
 
         // delimiters
+
         Comma,
-
         Semicolon,
-
         LParen,
         RParen,
         LBrace,
         RBrace,
+        LessThan,
+        GreaterThan,
 
         // keywords
-        Function,
 
+        Function,
         Let,
+        If,
+        Else,
+        Return,
+
+        // Primative Values
+
+        True,
+        False,
     }
 }

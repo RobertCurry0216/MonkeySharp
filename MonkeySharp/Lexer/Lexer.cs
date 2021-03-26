@@ -94,6 +94,15 @@ namespace MonkeySharp.Lexer
             return Input.Substring(startPos, Position - startPos);
         }
 
+        private char PeekChar()
+        {
+            if (ReadPosition >= Input.Length)
+            {
+                return '\0';
+            }
+            return Input[ReadPosition];
+        }
+
         #endregion Private Methods
 
         #region public Methods
@@ -106,15 +115,50 @@ namespace MonkeySharp.Lexer
 
             switch (Char)
             {
-                case '=': token = new Token(TokenType.Assign, Char.ToString()); break;
+                // operators
+                case '!':
+                    if (PeekChar() == '=')
+                    {
+                        ReadChar();
+                        token = new Token(TokenType.NotEqual, "!=");
+                    }
+                    else
+                    {
+                        token = new Token(TokenType.Bang, Char.ToString());
+                    }
+                    break;
+
+                case '=':
+                    if (PeekChar() == '=')
+                    {
+                        ReadChar();
+                        token = new Token(TokenType.Equal, "==");
+                    }
+                    else
+                    {
+                        token = new Token(TokenType.Assign, Char.ToString());
+                    }
+                    break;
+
                 case '+': token = new Token(TokenType.Plus, Char.ToString()); break;
+                case '-': token = new Token(TokenType.Minus, Char.ToString()); break;
+                case '*': token = new Token(TokenType.Asterisk, Char.ToString()); break;
+                case '/': token = new Token(TokenType.Slash, Char.ToString()); break;
+
+                // delimiters
                 case '(': token = new Token(TokenType.LParen, Char.ToString()); break;
                 case ')': token = new Token(TokenType.RParen, Char.ToString()); break;
                 case '{': token = new Token(TokenType.LBrace, Char.ToString()); break;
                 case '}': token = new Token(TokenType.RBrace, Char.ToString()); break;
+                case '<': token = new Token(TokenType.LessThan, Char.ToString()); break;
+                case '>': token = new Token(TokenType.GreaterThan, Char.ToString()); break;
                 case ',': token = new Token(TokenType.Comma, Char.ToString()); break;
                 case ';': token = new Token(TokenType.Semicolon, Char.ToString()); break;
+
+                // eof
                 case '\0': token = new Token(TokenType.Eof, ""); break;
+
+                //identifiers, literals, and keywords
                 default:
                     if (IsLetter(Char))
                     {

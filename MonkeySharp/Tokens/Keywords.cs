@@ -9,6 +9,11 @@ namespace MonkeySharp.Tokens
         private static Dictionary<string, TokenType> keywords = new Dictionary<string, TokenType>() {
                 {"fn", TokenType.Function },
                 {"let", TokenType.Let },
+                {"if", TokenType.If },
+                {"else", TokenType.Else },
+                {"return", TokenType.Return },
+                {"true", TokenType.True },
+                {"false", TokenType.False },
             };
 
         public static TokenType LookupType(string ident)
