@@ -1,9 +1,9 @@
-import Chat from './componants/Chat/Chat';
+import { ReplPage } from "./pages";
 
 function App() {
   return (
     <div className="App">
-      <Chat />
+      <ReplPage />
     </div>
   );
 }

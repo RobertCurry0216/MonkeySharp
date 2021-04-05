@@ -71,7 +71,7 @@ namespace MonkeySharp.Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapHub<ChatHub>("/hubs/chat");
+                endpoints.MapHub<ReplHub>("/monkeysharp/repl");
             });
         }
     }
