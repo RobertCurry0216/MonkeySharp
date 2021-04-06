@@ -1,0 +1,38 @@
+﻿@page "/"
+
+<form @onsubmit="parse">
+    <input type="text" name="input" @bind-value=@inputText />
+    <input type="submit" value="Run" />
+    <br />
+    <div>
+        @foreach (var line in Output)
+            {
+                <p>@line</p>
+            }
+    </div>
+</form>
+
+
+@code {
+    private ReplCache Cache = new ReplCache();
+
+    public string inputText
+    {
+        get { return Cache.ValueIn; }
+        set { Cache.ValueIn = value; }
+    }
+
+    public List<string> Output
+    {
+        get { return Cache.ValuesOut; }
+        set { Cache.ValuesOut = value; }
+    }
+
+    public void parse()
+    {
+        var writer = new WebWriter(Cache);
+        var reader = new WebReader(Cache);
+        var repl = new WebRepl(reader, writer);
+        repl.Start();
+    }
+}

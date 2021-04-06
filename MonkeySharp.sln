@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonkeySharpTests", "MonkeyS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonkeySharp.Cli", "MonkeySharp.Cli\MonkeySharp.Cli.csproj", "{97ED70C9-56D4-4B62-901D-A7A03220FEB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeySharp.Api", "MonkeySharp.Api\MonkeySharp.Api.csproj", "{6C95BE12-D600-4152-AED0-CAFAD0F7BF26}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeySharp.Web", "MonkeySharp.Web\MonkeySharp.Web.csproj", "{B64A5A49-FF1C-4D7F-B85D-B759C00FD6CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{97ED70C9-56D4-4B62-901D-A7A03220FEB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97ED70C9-56D4-4B62-901D-A7A03220FEB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97ED70C9-56D4-4B62-901D-A7A03220FEB4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6C95BE12-D600-4152-AED0-CAFAD0F7BF26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6C95BE12-D600-4152-AED0-CAFAD0F7BF26}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6C95BE12-D600-4152-AED0-CAFAD0F7BF26}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6C95BE12-D600-4152-AED0-CAFAD0F7BF26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B64A5A49-FF1C-4D7F-B85D-B759C00FD6CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64A5A49-FF1C-4D7F-B85D-B759C00FD6CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64A5A49-FF1C-4D7F-B85D-B759C00FD6CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64A5A49-FF1C-4D7F-B85D-B759C00FD6CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
