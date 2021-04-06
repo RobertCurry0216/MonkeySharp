@@ -1,11 +1,11 @@
 ﻿@page "/"
 
 <form @onsubmit="parse">
-    <input type="text" name="input" @bind-value=@inputText />
+    <input type="text" name="input" @bind-value=@(Cache.ValueIn) />
     <input type="submit" value="Run" />
     <br />
     <div>
-        @foreach (var line in Output)
+        @foreach (var line in Cache.ValuesOut)
             {
                 <p>@line</p>
             }
@@ -15,18 +15,6 @@
 
 @code {
     private ReplCache Cache = new ReplCache();
-
-    public string inputText
-    {
-        get { return Cache.ValueIn; }
-        set { Cache.ValueIn = value; }
-    }
-
-    public List<string> Output
-    {
-        get { return Cache.ValuesOut; }
-        set { Cache.ValuesOut = value; }
-    }
 
     public void parse()
     {
